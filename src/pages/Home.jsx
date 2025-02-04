@@ -1,13 +1,35 @@
 import MovieCard from "../components/MovieCard";
+import { searchMovies, getPopularMovies } from "../services/api";
 import { useEffect, useState } from "react";
+import "../css/Home.css";
 
 export default function Home() {
   const [searchQuery, setSearchQuery] = useState("");
+  const [movies, setMovies] = useState([]);
+  const [error, setError] = useState(null);
+  let [loading, setLoading] = useState(true);
 
-  const movies = [{ id: 1, title: "Shrek 2", release_date: "2002" }];
+  useEffect(() => {
+    const loadPopularMovies = async () => {
+      try {
+        const popularMovies = await getPopularMovies();
+        setMovies(popularMovies);
+      } catch (err) {
+        setError("Failed load movies...");
+        console.log(err);
+      } finally {
+        setLoading(false);
+      }
+    };
 
-  const handleSearch = (e) => {
+    loadPopularMovies();
+  }, []);
+
+  const handleSearch = async (e) => {
     e.preventDefault();
+    if (!searchQuery.trim()) return;
+    const searchResults = await searchMovies(searchQuery);
+    setMovies(searchResults);
   };
 
   return (
