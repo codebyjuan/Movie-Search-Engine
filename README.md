@@ -18,45 +18,6 @@ The **Movie Search Application** allows users to search for movies and view rele
 - JavaScript (ES6+)
 - HTML5 & CSS3
 
-## 📂 Project Structure
-
-```
-├── src
-│   ├── components
-│   │   ├── NavBar.jsx
-│   ├── pages
-│   │   ├── Home.jsx
-│   │   ├── Favorites.jsx
-│   ├── css
-│   │   ├── App.css
-│   │   ├── Favorites.css
-│   ├── App.jsx
-│   ├── index.jsx
-│
-├── public
-│   ├── index.html
-│
-├── package.json
-└── README.md
-```
-
-## ⚡ Installation & Setup
-
-1. **Clone the repository:**
-   ```sh
-   git clone https://github.com/your-username/movie-search-app.git
-   cd movie-search-app
-   ```
-2. **Install dependencies:**
-   ```sh
-   npm install
-   ```
-3. **Run the development server:**
-   ```sh
-   npm start
-   ```
-4. Open **http://localhost:3000/** in your browser.
-
 ## 📌 Usage
 
 1. Use the search bar to find movies by title.
