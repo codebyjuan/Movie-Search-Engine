@@ -20,7 +20,11 @@ export default function MovieCard({ movie }) {
       </div>
       <div className="movie-info">
         <h3>{movie.title}</h3>
-        <p>{movie.release_date.split("-")[0]}</p>
+        <p>
+          {movie.release_date
+            ? movie.release_date.split("-")[0]
+            : "Unknown Release Year"}
+        </p>
       </div>
     </div>
   );
