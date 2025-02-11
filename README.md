@@ -1,26 +1,24 @@
-# Movie Search Application
+# 🎬 Movie Search Engine  
 
-## 📌 Description
+## 📌 Overview  
+A **React-based movie search application** that allows users to search for movies, view details like ratings and descriptions, and save favorites. Uses **The Movie Database (TMDB) API** for real-time movie data.  
 
-The **Movie Search Application** allows users to search for movies and view relevant details such as titles, descriptions, and ratings. Users can also add movies to their **Favorites** list for easy access.
+🔗 **Live Demo:** [Movie Search Engine](https://movie-search-engine-drab.vercel.app)  
 
-## 🚀 Features
+---
 
-- 🔍 Search for movies by title
-- 📃 View movie details (e.g., description, rating, poster)
-- ⭐ Add and remove movies from the **Favorites** list
-- 🏠 Navigate between **Home** and **Favorites** pages
+## 🚀 Features  
+✅ **Instant search** – Find movies in real time using TMDB API  
+✅ **Detailed movie info** – View ratings, descriptions, and posters  
+✅ **Favorites list** – Save and remove favorite movies  
+✅ **Smooth navigation** – Built with **React Router**  
+✅ **Responsive design** – Works across desktop and mobile  
 
-## 🛠️ Technologies Used
+---
 
-- React.js
-- React Router
-- JavaScript (ES6+)
-- HTML5 & CSS3
+## 🛠️ Technologies  
+- **React.js** – Component-based UI  
+- **React Router** – Client-side navigation  
+- **TMDB API** – Fetching real-time movie data  
+- **JavaScript (ES6+), HTML5, CSS3**  
 
-## 📌 Usage
-
-1. Use the search bar to find movies by title.
-2. Click on a movie to view details.
-3. Press the **Add to Favorites** button to save a movie.
-4. Navigate to the **Favorites** page to view saved movies.
